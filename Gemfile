@@ -20,6 +20,7 @@ gem "sass-rails", "~> 5.0"
 gem "secure_headers", "~> 3.0"
 gem "sidekiq", ">= 4.2.0"
 gem "turbolinks", "~> 5"
+gem "devise"
 
 group :production, :staging do
   gem "postmark-rails"
@@ -48,7 +49,7 @@ group :development do
   gem "puma", "~> 3.0"
   gem "rack-livereload"
   gem "rb-fsevent", :require => false
-  gem "rubocop", :require => false, ">= 0.44.0"
+  gem "rubocop", :require => false
   gem "simplecov", :require => false
   gem "spring"
   gem "sshkit", "~> 1.8", :require => false
@@ -56,6 +57,7 @@ group :development do
   gem "terminal-notifier", :require => false
   gem "terminal-notifier-guard", :require => false
   gem "xray-rails", ">= 0.1.18"
+  gem "pry"
 end
 
 group :test do
